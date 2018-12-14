@@ -17,12 +17,14 @@
 ### Backend
 
 * Standard spring boot project
+* **NOTICE** this branch is based on Dubbo 2.7-SNAPSHOT, since this version is not published yet, so if you find a dependency error, please clear the dubbo2.7 related files in the local library
+* force update under root path(incubator-dubbo-ops) for the first building: `mvn -Dmaven.test.skip=true clean -U package`
 
 
 ### Production Setup
 
 1. Clone source code on develop branch `git clone https://github.com/apache/incubator-dubbo-ops.git`
-2. Specify registry address in `dubbo-admin-backend/src/resources/application-production.properties`
+2. Specify registry address in `dubbo-admin-backend/src/main/resources/application-production.properties`
 3. Build   
 
     > - `mvn clean package`
